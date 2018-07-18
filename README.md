@@ -1,6 +1,8 @@
 # AnimationLibrary
 Web app for creating animation.
 
+[LIVE VERSION](https://eugeneyakovlev.github.io/AnimationLibrary/)
+
 With this app you can easily create cross-browser animations for you to use in your projects.
 There are some animations presets for blocks and text.
 

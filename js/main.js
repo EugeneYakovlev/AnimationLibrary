@@ -9,7 +9,7 @@ $(document).ready(function () {
         $(this).parents('.tabSelectors').siblings('.confirmButton').removeClass('unactive');
         if ($(this).parents('.tab').hasClass('transform')) {
             var activeIndex = $(this).index();
-            console.log(activeIndex);
+            //console.log(activeIndex);
             if($(this).parent('ul').hasClass('text')) {
                 activeIndex = activeIndex + 16;
             }
@@ -29,28 +29,28 @@ $(document).ready(function () {
             if (activeIcon.hasClass('rectangle')) {
                 $('ul.figure').addClass('show');
                 $('.content').append("<div class='exBlock rectangle_kr'></div>" +
-                    "<div class='switch roundSwitch'>КРУГ</div>");
+                    "<div class='switch roundSwitch'>Circle</div>");
             }
             else if(activeIcon.hasClass('text')) {
                 $('ul.text').addClass('show');
-                $('.content').append("<div class='exBlock text_kr'>Пример текста</div>");
+                $('.content').append("<div class='exBlock text_kr'>Text example</div>");
             }
-            $('.content').append("<div class='switch colorSwitch'>ЦВЕТ</div>" +
+            $('.content').append("<div class='switch colorSwitch'>Color</div>" +
                 "<div class='replay'></div>");
-            console.log('Animation presets loaded!')
+            //console.log('Animation presets loaded!')
         }
     });
     $(document).on('click', '.colorSwitch', function (e) {
        e.preventDefault();
        $(this).toggleClass('change');
        $('.exBlock').toggleClass('white');
-       console.log('Color changed!')
+       //console.log('Color changed!')
     });
     $(document).on('click', '.roundSwitch', function (e) {
         e.preventDefault();
         $(this).toggleClass('change');
         $('.exBlock').toggleClass('round');
-        console.log('Figure changed!');
+        //console.log('Figure changed!');
     });
     var animation;
     var currentdate;
@@ -68,11 +68,9 @@ $(document).ready(function () {
             animationDirection = $('#direction').val(),
             animationFilling = $('#filling').val();
         if($('#durationInf').is(":checked")) {
-            console.log(3);
             animationIteration = 'infinite';
         }
         else {
-            console.log(5);
             animationIteration = $('#iteration').val();
         }
         animation = animationName + ' ' + animationTime + 's ' + animationFunction + ' ' + animationDelay + 's ' + animationIteration + ' ' + animationDirection + ' ' + animationFilling;
@@ -92,7 +90,7 @@ $(document).ready(function () {
             ".animationClass {<br>" +
             "&emsp;&emsp;animation:" + animation +";" +
             "<br>}");
-        console.log('Animation function changed!');
+        //console.log('Animation function changed!');
     });
     $(document).on('click', '.replay', function (e) {
         e.preventDefault();
@@ -116,12 +114,12 @@ $(document).ready(function () {
             $('.animationSettings').addClass('show');
             $('.mainButton').addClass('show');
         }
-        console.log('Direction changed!')
+        //console.log('Direction changed!')
     });
     $(document).on('click', '.mainButton', function (e) {
        e.preventDefault();
        $('.wrapper').addClass('result');
-       console.log('Final result created!');
+       //console.log('Final result created!');
     });
     $(document).on('click', '.closePopup', function (e) {
        e.preventDefault();

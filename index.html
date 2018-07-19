@@ -14,17 +14,17 @@
     <div class="wrapper">
         <div class="sidebar">
             <div class="tab object open">
-                <h2>Объект</h2>
+                <h2>Animation Object</h2>
                 <div class="tabContent">
                     <div class="tabSelectors iconsWrap">
-                        <div class="icon rectangle">фигура</div>
-                        <div class="icon text">текст</div>
+                        <div class="icon rectangle">Block</div>
+                        <div class="icon text">Text</div>
                     </div>
-                    <a href="#" class="confirmButton unactive">Добавить</a>
+                    <a href="#" class="confirmButton unactive">Add</a>
                 </div>
             </div>
             <div class="tab transform">
-                <h2>Тип анимации</h2>
+                <h2>Animation preset</h2>
                 <div class="tabContent">
                     <form id="mainForm">
                         <div class="tabSelectors animationTab">
@@ -57,263 +57,263 @@
                         </div>
                         <div class="listContent">
                             <div class="list rotateList">
-                                <label for="rotate">Ось:</label>
+                                <label for="rotate">Direction:</label>
                                 <select class="form-control" id="rotate">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="rotate-left">Слева</option>
-                                    <option data-animation_name="rotate-top">Сверху</option>
-                                    <option data-animation_name="rotate-right">Справа</option>
-                                    <option data-animation_name="rotate-bottom">Снизу</option>
-                                    <option data-animation_name="rotate-center">На месте</option>
-                                    <option data-animation_name="rotate-bl">Снизу-Слева</option>
-                                    <option data-animation_name="rotate-br">Снизу-Справа</option>
-                                    <option data-animation_name="rotate-tr">Сверху-Справа</option>
-                                    <option data-animation_name="rotate-tl">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="rotate-left">Left</option>
+                                    <option data-animation_name="rotate-top">Top</option>
+                                    <option data-animation_name="rotate-right">Right</option>
+                                    <option data-animation_name="rotate-bottom">Bottom</option>
+                                    <option data-animation_name="rotate-center">Center</option>
+                                    <option data-animation_name="rotate-bl">Bottom-Left</option>
+                                    <option data-animation_name="rotate-br">Bottom-Right</option>
+                                    <option data-animation_name="rotate-tr">Top-Right</option>
+                                    <option data-animation_name="rotate-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list shadowPopList">
-                                <label for="shadowPop">Направление:</label>
+                                <label for="shadowPop">Direction:</label>
                                 <select class="form-control" id="shadowPop">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="shadow-pop-bl">Снизу-Слева</option>
-                                    <option data-animation_name="shadow-pop-br">Снизу-Справа</option>
-                                    <option data-animation_name="shadow-pop-tr">Сверху-Справа</option>
-                                    <option data-animation_name="shadow-pop-tl">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="shadow-pop-bl">Bottom-Left</option>
+                                    <option data-animation_name="shadow-pop-br">Bottom-Right</option>
+                                    <option data-animation_name="shadow-pop-tr">Top-Right</option>
+                                    <option data-animation_name="shadow-pop-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list swirlInList">
-                                <label for="swirlIn">Направление:</label>
+                                <label for="swirlIn">Direction:</label>
                                 <select class="form-control" id="swirlIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="swirl-in-fwd">По центру</option>
-                                    <option data-animation_name="swirl-in-left-fwd">Слева</option>
-                                    <option data-animation_name="swirl-in-top-fwd">Сверху</option>
-                                    <option data-animation_name="swirl-in-right-fwd">Справа</option>
-                                    <option data-animation_name="swirl-in-bottom-fwd">Снизу</option>
-                                    <option data-animation_name="swirl-in-bl-fwd">Снизу-Слева</option>
-                                    <option data-animation_name="swirl-in-br-fwd">Снизу-Справа</option>
-                                    <option data-animation_name="swirl-in-tr-fwd">Сверху-Справа</option>
-                                    <option data-animation_name="swirl-in-tl-fwd">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="swirl-in-fwd">Center</option>
+                                    <option data-animation_name="swirl-in-left-fwd">Left</option>
+                                    <option data-animation_name="swirl-in-top-fwd">Top</option>
+                                    <option data-animation_name="swirl-in-right-fwd">Right</option>
+                                    <option data-animation_name="swirl-in-bottom-fwd">Bottom</option>
+                                    <option data-animation_name="swirl-in-bl-fwd">Bottom-Left</option>
+                                    <option data-animation_name="swirl-in-br-fwd">Bottom-Right</option>
+                                    <option data-animation_name="swirl-in-tr-fwd">Top-Right</option>
+                                    <option data-animation_name="swirl-in-tl-fwd">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list swirlOutList">
-                                <label for="swirlOut">Направление:</label>
+                                <label for="swirlOut">Direction:</label>
                                 <select class="form-control" id="swirlOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="swirl-out-bck">По центру</option>
-                                    <option data-animation_name="swirl-out-left-bck">Слева</option>
-                                    <option data-animation_name="swirl-out-top-bck">Сверху</option>
-                                    <option data-animation_name="swirl-out-right-bck">Справа</option>
-                                    <option data-animation_name="swirl-out-bottom-bck">Снизу</option>
-                                    <option data-animation_name="swirl-out-bl-bck">Снизу-Слева</option>
-                                    <option data-animation_name="swirl-out-br-bck">Снизу-Справа</option>
-                                    <option data-animation_name="swirl-out-tr-bck">Сверху-Справа</option>
-                                    <option data-animation_name="swirl-out-tl-bck">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="swirl-out-bck">Center</option>
+                                    <option data-animation_name="swirl-out-left-bck">Left</option>
+                                    <option data-animation_name="swirl-out-top-bck">Top</option>
+                                    <option data-animation_name="swirl-out-right-bck">Right</option>
+                                    <option data-animation_name="swirl-out-bottom-bck">Bottom</option>
+                                    <option data-animation_name="swirl-out-bl-bck">Bottom-Left</option>
+                                    <option data-animation_name="swirl-out-br-bck">Bottom-Right</option>
+                                    <option data-animation_name="swirl-out-tr-bck">Top-Right</option>
+                                    <option data-animation_name="swirl-out-tl-bck">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list bounceInList">
-                                <label for="bounceIn">Направление:</label>
+                                <label for="bounceIn">Direction:</label>
                                 <select class="form-control" id="bounceIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="bounce-in-bck">По центру (с уменьшением)</option>
-                                    <option data-animation_name="bounce-in-fwd">По центру (с увеличением)</option>
-                                    <option data-animation_name="bounce-in-right">Справа</option>
-                                    <option data-animation_name="bounce-in-bottom">Снизу</option>
-                                    <option data-animation_name="bounce-in-left">Слева</option>
-                                    <option data-animation_name="bounce-in-top">Сверху</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="bounce-in-bck">Center (scaleOut)</option>
+                                    <option data-animation_name="bounce-in-fwd">Center (scaleIn)</option>
+                                    <option data-animation_name="bounce-in-right">Right</option>
+                                    <option data-animation_name="bounce-in-bottom">Bottom</option>
+                                    <option data-animation_name="bounce-in-left">Left</option>
+                                    <option data-animation_name="bounce-in-top">Top</option>
                                 </select>
                             </div>
                             <div class="list bounceOutList">
-                                <label for="bounceOut">Направление:</label>
+                                <label for="bounceOut">Direction:</label>
                                 <select class="form-control" id="bounceOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="bounce-out-right">Справа</option>
-                                    <option data-animation_name="bounce-out-bottom">Снизу</option>
-                                    <option data-animation_name="bounce-out-left">Слева</option>
-                                    <option data-animation_name="bounce-out-top">Сверху</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="bounce-out-right">Right</option>
+                                    <option data-animation_name="bounce-out-bottom">Bottom</option>
+                                    <option data-animation_name="bounce-out-left">Left</option>
+                                    <option data-animation_name="bounce-out-top">Top</option>
                                 </select>
                             </div>
                             <div class="list rollInList">
-                                <label for="rollIn">Направление:</label>
+                                <label for="rollIn">Direction:</label>
                                 <select class="form-control" id="rollIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="roll-in-right">Справа</option>
-                                    <option data-animation_name="roll-in-bottom">Снизу</option>
-                                    <option data-animation_name="roll-in-left">Слева</option>
-                                    <option data-animation_name="roll-in-top">Сверху</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="roll-in-right">Right</option>
+                                    <option data-animation_name="roll-in-bottom">Bottom</option>
+                                    <option data-animation_name="roll-in-left">Left</option>
+                                    <option data-animation_name="roll-in-top">Top</option>
                                 </select>
                             </div>
                             <div class="list rollOutList">
-                                <label for="rollOut">Направление:</label>
+                                <label for="rollOut">Direction:</label>
                                 <select class="form-control" id="rollOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="roll-out-right">Вправо</option>
-                                    <option data-animation_name="roll-out-bottom">Вниз</option>
-                                    <option data-animation_name="roll-out-left">Влево</option>
-                                    <option data-animation_name="roll-out-top">Вверх</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="roll-out-right">Right</option>
+                                    <option data-animation_name="roll-out-bottom">Bottom</option>
+                                    <option data-animation_name="roll-out-left">Left</option>
+                                    <option data-animation_name="roll-out-top">Top</option>
                                 </select>
                             </div>
                             <div class="list fadeInList">
-                                <label for="fadeIn">Направление:</label>
+                                <label for="fadeIn">Direction:</label>
                                 <select class="form-control" id="fadeIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="fade-in-left">Слева</option>
-                                    <option data-animation_name="fade-in-top">Сверху</option>
-                                    <option data-animation_name="fade-in-right">Справа</option>
-                                    <option data-animation_name="fade-in-bottom">Снизу</option>
-                                    <option data-animation_name="fade-in-fwd">На месте</option>
-                                    <option data-animation_name="fade-in-bl">Снизу-Слева</option>
-                                    <option data-animation_name="fade-in-br">Снизу-Справа</option>
-                                    <option data-animation_name="fade-in-tr">Сверху-Справа</option>
-                                    <option data-animation_name="fade-in-tl">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="fade-in-left">Left</option>
+                                    <option data-animation_name="fade-in-top">Top</option>
+                                    <option data-animation_name="fade-in-right">Right</option>
+                                    <option data-animation_name="fade-in-bottom">Bottom</option>
+                                    <option data-animation_name="fade-in-fwd">Center</option>
+                                    <option data-animation_name="fade-in-bl">Bottom-Left</option>
+                                    <option data-animation_name="fade-in-br">Bottom-Right</option>
+                                    <option data-animation_name="fade-in-tr">Top-Right</option>
+                                    <option data-animation_name="fade-in-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list fadeOutList">
-                                <label for="fadeOut">Направление:</label>
+                                <label for="fadeOut">Direction:</label>
                                 <select class="form-control" id="fadeOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="fade-out-left">Влево</option>
-                                    <option data-animation_name="fade-out-top">Вверх</option>
-                                    <option data-animation_name="fade-out-right">Вправо</option>
-                                    <option data-animation_name="fade-out-bottom">Вниз</option>
-                                    <option data-animation_name="fade-out-fwd">По центру</option>
-                                    <option data-animation_name="fade-out-bl">Вниз-Влево</option>
-                                    <option data-animation_name="fade-out-br">Вниз-Вправо</option>
-                                    <option data-animation_name="fade-out-tr">Вверх-Вправо</option>
-                                    <option data-animation_name="fade-out-tl">Вверх-Влево</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="fade-out-left">Left</option>
+                                    <option data-animation_name="fade-out-top">Top</option>
+                                    <option data-animation_name="fade-out-right">Right</option>
+                                    <option data-animation_name="fade-out-bottom">Bottom</option>
+                                    <option data-animation_name="fade-out-fwd">Center</option>
+                                    <option data-animation_name="fade-out-bl">Bottom-Left</option>
+                                    <option data-animation_name="fade-out-br">Bottom-Right</option>
+                                    <option data-animation_name="fade-out-tr">Top-Right</option>
+                                    <option data-animation_name="fade-out-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list scaleUpList">
-                                <label for="scaleUp">Направление:</label>
+                                <label for="scaleUp">Direction:</label>
                                 <select class="form-control" id="scaleUp">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="scale-up-left">Слева</option>
-                                    <option data-animation_name="scale-up-top">Сверху</option>
-                                    <option data-animation_name="scale-up-right">Справа</option>
-                                    <option data-animation_name="scale-up-bottom">Снизу</option>
-                                    <option data-animation_name="scale-up-center">На месте</option>
-                                    <option data-animation_name="scale-up-bl">Снизу-Слева</option>
-                                    <option data-animation_name="scale-up-br">Снизу-Справа</option>
-                                    <option data-animation_name="scale-up-tr">Сверху-Справа</option>
-                                    <option data-animation_name="scale-up-tl">Сверху-Слева</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="scale-up-left">Left</option>
+                                    <option data-animation_name="scale-up-top">Top</option>
+                                    <option data-animation_name="scale-up-right">Right</option>
+                                    <option data-animation_name="scale-up-bottom">Bottom</option>
+                                    <option data-animation_name="scale-up-center">Center</option>
+                                    <option data-animation_name="scale-up-bl">Bottom-Left</option>
+                                    <option data-animation_name="scale-up-br">Bottom-Right</option>
+                                    <option data-animation_name="scale-up-tr">Top-Right</option>
+                                    <option data-animation_name="scale-up-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list scaleDownList">
-                                <label for="scaleDown">Направление:</label>
+                                <label for="scaleDown">Direction:</label>
                                 <select class="form-control" id="scaleDown">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="scale-down-left">Влево</option>
-                                    <option data-animation_name="scale-down-top">Вверх</option>
-                                    <option data-animation_name="scale-down-right">Вправо</option>
-                                    <option data-animation_name="scale-down-bottom">Вниз</option>
-                                    <option data-animation_name="scale-down-center">По центру</option>
-                                    <option data-animation_name="scale-down-bl">Вниз-Влево</option>
-                                    <option data-animation_name="scale-down-br">Вниз-Вправо</option>
-                                    <option data-animation_name="scale-down-tr">Вверх-Вправо</option>
-                                    <option data-animation_name="scale-down-tl">Вверх-Влево</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="scale-down-left">Left</option>
+                                    <option data-animation_name="scale-down-top">Top</option>
+                                    <option data-animation_name="scale-down-right">Right</option>
+                                    <option data-animation_name="scale-down-bottom">Bottom</option>
+                                    <option data-animation_name="scale-down-center">Center</option>
+                                    <option data-animation_name="scale-down-bl">Bottom-Left</option>
+                                    <option data-animation_name="scale-down-br">Bottom-Right</option>
+                                    <option data-animation_name="scale-down-tr">Top-Right</option>
+                                    <option data-animation_name="scale-down-tl">Top-Left</option>
                                 </select>
                             </div>
                             <div class="list vibrate">
-                                <label for="vibrate">Пресет:</label>
+                                <label for="vibrate">Preset:</label>
                                 <select class="form-control" id="vibrate">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="vibrate-1">Пресет №1</option>
-                                    <option data-animation_name="vibrate-2">Пресет №2</option>
-                                    <option data-animation_name="vibrate-3">Пресет №3</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="vibrate-1">Preset №1</option>
+                                    <option data-animation_name="vibrate-2">Preset №2</option>
+                                    <option data-animation_name="vibrate-3">Preset №3</option>
                                 </select>
                             </div>
                             <div class="list wobble">
-                                <label for="wobble">Пресет:</label>
+                                <label for="wobble">Preset:</label>
                                 <select class="form-control" id="wobble">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="wobble-hor-top">Сверху</option>
-                                    <option data-animation_name="wobble-hor-bottom">Снизу</option>
-                                    <option data-animation_name="wobble-ver-left">Слева</option>                                    <option data-animation_name="wobble-ver-left">Слева</option>
-                                    <option data-animation_name="wobble-ver-right">Справа</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="wobble-hor-top">Top</option>
+                                    <option data-animation_name="wobble-hor-bottom">Bottom</option>
+                                    <option data-animation_name="wobble-ver-left">Left</option>
+                                    <option data-animation_name="wobble-ver-right">Right</option>
                                 </select>
                             </div>
                             <div class="list pulsate">
-                                <label for="pulsate">Пресет:</label>
+                                <label for="pulsate">Preset:</label>
                                 <select class="form-control" id="pulsate">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="heartbeat">Сердцебиение</option>
-                                    <option data-animation_name="ping">Пинг</option>
-                                    <option data-animation_name="pulsate-bck">В центр</option>                                    <option data-animation_name="wobble-ver-left">Слева</option>
-                                    <option data-animation_name="pulsate-fwd">Из центра</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="heartbeat">Heart beat</option>
+                                    <option data-animation_name="ping">Ping</option>
+                                    <option data-animation_name="pulsate-bck">Forwards</option>
+                                    <option data-animation_name="pulsate-fwd">Backwards</option>
                                 </select>
                             </div>
                             <div class="list soaring">
-                                <label for="soaring">Пресет:</label>
+                                <label for="soaring">Preset:</label>
                                 <select class="form-control" id="soaring">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="float-hor">Вертикально</option>
-                                    <option data-animation_name="float-ver">Горизонтально</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="float-hor">Vertical</option>
+                                    <option data-animation_name="float-ver">Horizontal</option>
                                 </select>
                             </div>
                             <div class="list trackingInList">
-                                <label for="trackingIn">Направление:</label>
+                                <label for="trackingIn">Direction:</label>
                                 <select class="form-control" id="trackingIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="tracking-in-expand-fwd-top">Сверху</option>
-                                    <option data-animation_name="tracking-in-expand-fwd-bottom">Снизу</option>
-                                    <option data-animation_name="tracking-in-expand-fwd">Из центра</option>
-                                    <option data-animation_name="tracking-in-contract-bck-bottom">Вверх</option>
-                                    <option data-animation_name="tracking-in-contract-bck-top">Вниз</option>
-                                    <option data-animation_name="tracking-in-contract-bck">В центр</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="tracking-in-expand-fwd-top">From top</option>
+                                    <option data-animation_name="tracking-in-expand-fwd-bottom">From bottom</option>
+                                    <option data-animation_name="tracking-in-expand-fwd">Backwards</option>
+                                    <option data-animation_name="tracking-in-contract-bck-bottom">To Top</option>
+                                    <option data-animation_name="tracking-in-contract-bck-top">To Bottom</option>
+                                    <option data-animation_name="tracking-in-contract-bck">Forwards</option>
                                 </select>
                             </div>
                             <div class="list trackingOutList">
-                                <label for="trackingOut">Направление:</label>
+                                <label for="trackingOut">Direction:</label>
                                 <select class="form-control" id="trackingOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="tracking-out-expand-fwd-top">Вверх(Вширь)</option>
-                                    <option data-animation_name="tracking-out-expand-fwd-bottom">Вниз(Вширь)</option>
-                                    <option data-animation_name="tracking-out-expand-fwd">Из центра</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="tracking-out-expand-fwd-top">Top(width)</option>
+                                    <option data-animation_name="tracking-out-expand-fwd-bottom">Bottom(width)</option>
+                                    <option data-animation_name="tracking-out-expand-fwd">Backwards</option>
                                     <option data-animation_name="tracking-out-contract-bck-bottom">Вверх</option>
                                     <option data-animation_name="tracking-out-contract-bck-top">Вниз</option>
-                                    <option data-animation_name="tracking-out-contract-bck">В центр</option>
+                                    <option data-animation_name="tracking-out-contract-bck">Forwards</option>
                                 </select>
                             </div>
                             <div class="list focusIn">
-                                <label for="focusIn">Направление:</label>
+                                <label for="focusIn">Direction:</label>
                                 <select class="form-control" id="focusIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="text-focus-in">На месте</option>
-                                    <option data-animation_name="focus-in-contract-bck">В центр</option>
-                                    <option data-animation_name="focus-in-expand-fwd">Из центра</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="text-focus-in">Center</option>
+                                    <option data-animation_name="focus-in-contract-bck">Forward</option>
+                                    <option data-animation_name="focus-in-expand-fwd">Backward</option>
                                 </select>
                             </div>
                             <div class="list focusOut">
-                                <label for="focusOut">Направление:</label>
+                                <label for="focusOut">Direction:</label>
                                 <select class="form-control" id="focusOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="text-blur-out">На месте</option>
-                                    <option data-animation_name="blur-out-contract-bck">В центр</option>
-                                    <option data-animation_name="blur-out-expand-fwd">Из центра</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="text-blur-out">Center</option>
+                                    <option data-animation_name="blur-out-contract-bck">Forward</option>
+                                    <option data-animation_name="blur-out-expand-fwd">Backward</option>
                                 </select>
                             </div>
                             <div class="list flickerIn">
-                                <label for="flickerIn">Направление:</label>
+                                <label for="flickerIn">Direction:</label>
                                 <select class="form-control" id="flickerIn">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="text-flicker-in-glow">На месте</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="text-flicker-in-glow">Center</option>
                                 </select>
                             </div>
                             <div class="list flickerOut">
-                                <label for="flickerOut">Направление:</label>
+                                <label for="flickerOut">Direction:</label>
                                 <select class="form-control" id="flickerOut">
-                                    <option selected>Не выбрано</option>
-                                    <option data-animation_name="text-flicker-out-glow">На месте</option>
+                                    <option selected>None</option>
+                                    <option data-animation_name="text-flicker-out-glow">Center</option>
                                 </select>
                             </div>
                         </div>
                         <div class="animationSettings">
                             <div class="inputWrap">
-                                <label for="duration">Время анимации (seconds):</label>
+                                <label for="duration">Animation time (seconds):</label>
                                 <input type="number" id="duration" class="form-control" value="1">
                             </div>
                             <div class="inputWrap">
-                                <label for="function">Функция анимации:</label>
+                                <label for="function">Timing function:</label>
                                 <select class="form-control" id="function">
                                     <option value="linear">Linear</option>
                                     <option value="ease">Ease</option>
@@ -323,16 +323,16 @@
                                 </select>
                             </div>
                             <div class="inputWrap">
-                                <label for="delay">Время задержки (seconds):</label>
+                                <label for="delay">Delay (seconds):</label>
                                 <input type="number" id="delay" class="form-control" value="0">
                             </div>
                             <div class="inputWrap">
-                                <label for="iteration">Кол-во итераций:</label>
+                                <label for="iteration">Iteration count:</label>
                                 <input type="number" id="iteration" class="form-control" value="1">
                                 <label class="checkbox-inline"><input type="checkbox" id="durationInf" value="infinite">Infinite</label>
                             </div>
                             <div class="inputWrap">
-                                <label for="direction">Направление:</label>
+                                <label for="direction">Direction:</label>
                                 <select class="form-control" id="direction">
                                     <option value="normal" selected>Normal</option>
                                     <option value="alternate">Alternate</option>
@@ -343,14 +343,14 @@
                             <div class="inputWrap">
                                 <label for="filling">Fill-mode:</label>
                                 <select class="form-control" id="filling">
-                                    <option value="none">Отсутсвует</option>
+                                    <option value="none">None</option>
                                     <option value="forwards">Forwards</option>
                                     <option value="backwards">Backwards</option>
                                     <option value="both" selected>Both</option>
                                 </select>
                             </div>
                         </div>
-                        <a class="mainButton">СКАЧАТЬ СТИЛИ</a>
+                        <a class="mainButton">Generate</a>
                     </form>
                 </div>
             </div>
@@ -359,16 +359,16 @@
         <div class="popup getStylesPopup">
             <div class="closePopup"></div>
             <div class="p">
-                <p>1. Скачайте библиотеку анимаций, если вы этого еще не сделали. (<a href="animation.zip">Скачать</a>)</p>
+                <p>1. Download library, if you haven't it. (<a href="animation.zip">download</a>)</p>
             </div>
             <div class="p">
-                <p>2. Подключите библиотеку анимаций в конце html-документа.</p>
+                <p>2. Include the stylesheet on your document's <head></p>
                 <pre>
                     <code><span><</span>link rel="stylesheet" href="css/animation.css"></code>
                 </pre>
             </div>
             <div class="p">
-                <p>3. Добавьте нужному объекту анимационный класс и стиль.</p>
+                <p>3. Add created style to your block in css file</p>
                 <p class="sub">HTML</p>
                 <pre>
                     <code><span><</span>div class="animationClass"><span><</span>/div></code>
